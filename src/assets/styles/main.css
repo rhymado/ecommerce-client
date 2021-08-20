@@ -1,0 +1,91 @@
+/* MAIN-GLOBAL */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* APP */
+.nav-header {
+  display: flex;
+  background-color: grey;
+  height: 10vh;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  gap: 5px;
+  padding: 0 5px;
+}
+
+.footer {
+  height: 10vh;
+  margin-top: auto;
+  background-color: aquamarine;
+}
+
+.home-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-login {
+  height: 50%;
+  padding: 2px;
+  background-color: transparent;
+  border: 2px solid goldenrod;
+}
+
+.btn-register {
+  padding: 2px;
+  height: 50%;
+  background-color: goldenrod;
+  color: white;
+}
+
+.logo {
+  margin-right: auto;
+  background-color: black;
+  width: 8vh;
+  height: 80%;
+  border-radius: 50%;
+}
+
+.click-me-btn {
+  height: 100px;
+  width: 200px;
+  background-color: lightcoral;
+  border-radius: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.click-me-btn:active {
+  background-color: cornflowerblue;
+}
+
+main {
+  padding: 0.5rem 1rem;
+}
+
+.header-title {
+  margin-right: auto;
+}
+
+.none {
+  display: none;
+}
