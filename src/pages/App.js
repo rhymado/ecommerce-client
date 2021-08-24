@@ -5,10 +5,17 @@ import Home from "../pages/Home";
 import Login from "../pages/Login";
 
 function App() {
+  const userInfo = {
+    id: 1,
+  };
   return (
     <Router>
       {/* localhost/ */}
-      <Route path="/" exact component={Home} />
+      <Route
+        path="/:id"
+        exact
+        render={(props) => <Home user={userInfo} {...props} />}
+      />
       {/* localhost/auth */}
       <Route path="/auth" component={Login} />
     </Router>

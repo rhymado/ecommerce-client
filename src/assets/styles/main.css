@@ -89,3 +89,14 @@ main {
 .none {
   display: none;
 }
+
+.form-post-product {
+  padding: 0.2rem;
+  border: 2px solid black;
+}
+
+.form-post-product > input,
+.form-post-product > button {
+  display: block;
+  margin: 0.2rem 0;
+}
