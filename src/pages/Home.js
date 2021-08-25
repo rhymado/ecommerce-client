@@ -56,17 +56,17 @@ class Home extends Component {
       .then((response) => console.log(response))
       .catch((error) => console.log(error));
   };
-  async componentDidMount() {
-    try {
-      await this.getProductsHandler();
-    } catch (err) {
-      console.log(err);
-    }
+  componentDidMount() {
+    // try {
+    //   await this.getProductsHandler();
+    // } catch (err) {
+    //   console.log(err);
+    // }
     const clicked = localStorage.getItem("clicked");
     if (clicked) this.setState({ clicked: Number(clicked) });
   }
   render() {
-    console.log(this.props.location);
+    // console.log(this.props.location);
     return (
       <div className="home-page">
         <Header title="home" />
