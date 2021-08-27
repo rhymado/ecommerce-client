@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import Axios from "axios";
 
 import Header from "../components/Header";
+import { getUser } from "../utils/https/user";
+import { getAllProducts, createNewProduct } from "../utils/https/products";
 
 class Home extends Component {
   state = {
@@ -11,8 +13,15 @@ class Home extends Component {
     history: [],
   };
   getUserHandler = () => {
-    const url = "https://jsonplaceholder.typicode.com/users";
-    Axios.get(url)
+    // const url = "https://jsonplaceholder.typicode.com/users";
+    // Axios.get(url)
+    //   .then(({ data }) => {
+    //     this.setState({
+    //       users: data,
+    //     });
+    //   })
+    //   .catch((error) => console.log(error));
+    getUser()
       .then(({ data }) => {
         this.setState({
           users: data,
@@ -33,12 +42,15 @@ class Home extends Component {
       .catch((error) => console.log(error));
   };
   getProductsHandler = async () => {
-    const url = "http://localhost:8000/products";
+    // const url = "http://localhost:8000/products";
     const query = this.props.location.search;
     // const params = {};
     // const queryArr = query.slice(1).split("&");
-    const urlWithQuery = url + query;
-    await Axios.get(urlWithQuery)
+    // const urlWithQuery = url + query;
+    // await Axios.get(urlWithQuery)
+    // .then(({ data }) => console.log(data))
+    // .catch((error) => console.log(error));
+    await getAllProducts(query)
       .then(({ data }) => console.log(data))
       .catch((error) => console.log(error));
   };
@@ -51,8 +63,9 @@ class Home extends Component {
       category_id: category_id.value,
       user_id: this.props.user.id,
     };
-    const url = "http://localhost:8000/products";
-    Axios.post(url, body)
+    // const url = "http://localhost:8000/products";
+    // Axios.post(url, body)
+    createNewProduct(body)
       .then((response) => console.log(response))
       .catch((error) => console.log(error));
   };
