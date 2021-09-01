@@ -105,3 +105,32 @@ main {
   height: 200px;
   width: 200px;
 }
+
+label {
+  display: block;
+  margin-top: 2px;
+}
+
+.container-operator {
+  background-color: lightcoral;
+}
+
+.operator {
+  width: 10%;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.minus {
+  border: 2px solid black;
+}
+
+.plus {
+  background-color: white;
+}
+
+.number {
+  font-size: 1.5rem;
+  font-weight: 500;
+}

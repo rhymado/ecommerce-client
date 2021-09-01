@@ -79,7 +79,7 @@ class Home extends Component {
     if (clicked) this.setState({ clicked: Number(clicked) });
   }
   render() {
-    // console.log(this.props.location);
+    // console.log(this.props.user);
     return (
       <div className="home-page">
         <Header title="home" />
@@ -156,9 +156,9 @@ class Home extends Component {
               </article>
             )}
           </section>
-          <Link to="/auth">
+          <Link to="/todo">
             <div style={{ backgroundColor: "lightgrey" }}>
-              <p>Go To Login</p>
+              <p>Go To Todo</p>
             </div>
           </Link>
         </main>
