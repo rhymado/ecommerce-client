@@ -14,7 +14,7 @@ export function AuthRoute({
     <Route
       path={path}
       exact={exact || false}
-      render={(...routerProps) =>
+      render={(routerProps) =>
         isLoggedIn ? (
           <Redirect to="/" />
         ) : (
