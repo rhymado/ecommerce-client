@@ -134,3 +134,64 @@ label {
   font-size: 1.5rem;
   font-weight: 500;
 }
+
+.calc-wrapper,
+.calc-screen,
+.calc-input,
+.calc-numbers,
+.calc-operators,
+.calc-operator,
+.calc-number {
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.calc-wrapper {
+  height: 500px;
+  width: 300px;
+}
+
+.calc-screen {
+  height: 20%;
+  width: 90%;
+  text-align: right;
+  font-size: 3rem;
+  overflow: scroll;
+}
+
+.calc-input {
+  height: 70%;
+  width: 90%;
+}
+
+.calc-numbers {
+  flex: 3;
+}
+
+.calc-operators {
+  flex: 1;
+}
+
+.calc-operator {
+  flex: 1;
+  margin: 2px;
+}
+
+.calc-operator p,
+.calc-number p {
+  text-align: center;
+  font-weight: 500;
+  vertical-align: middle;
+  font-size: 1.3rem;
+}
+
+.calc-number {
+  min-width: 33%;
+  height: 20%;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.title-changer-wrapper input {
+  display: block;
+}
