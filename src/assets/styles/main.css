@@ -195,3 +195,45 @@ label {
 .title-changer-wrapper input {
   display: block;
 }
+
+.container-events {
+  height: 100vh;
+  background: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section-hello,
+.section-input-name {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 1rem;
+}
+.text-hello {
+  font-size: large;
+  font-weight: 400;
+  margin: 1.5rem;
+}
+.input-name,
+.button-event {
+  border-radius: 20px;
+  padding: 10px;
+}
+.input-name:focus {
+  outline: none;
+}
+.form-input-name {
+  display: flex;
+  flex-direction: column;
+}
+.button-event {
+  border: 2px solid black;
+  text-align: center;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+.event-text {
+  margin: 1rem;
+}

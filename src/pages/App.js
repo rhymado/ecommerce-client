@@ -11,6 +11,7 @@ import Todo from "./Todo";
 import Theme from "./Theme";
 import Redux from "./Redux";
 import Hooks from "./Hooks";
+import Events from "./Events";
 import reduxStore from "../redux/store";
 
 class App extends React.Component {
@@ -96,6 +97,7 @@ class App extends React.Component {
             />
             <Route path="/redux" component={Redux} />
             <Route path="/hooks" component={Hooks} />
+            <Route path="/events" component={Events} />
           </Router>
         </ThemeProvider>
       </Provider>

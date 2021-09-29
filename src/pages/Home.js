@@ -106,7 +106,7 @@ class Home extends Component {
                 })
               }
             >
-              <p>Click Me</p>
+              <p style={{ cursor: "pointer" }}>Click Me</p>
             </div>
           </section>
           <section>
